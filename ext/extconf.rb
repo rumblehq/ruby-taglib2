@@ -6,7 +6,7 @@ CONFIG['CPP'].sub!(CONFIG['CPP'], 'g++ -E')
 CONFIG['LDSHARED'].sub!(CONFIG['CC'], 'g++')
 
 RbConfig::CONFIG['CC'] = 'g++'
-RbConfig::CONFIG['CC'] = 'g++ -E'
+RbConfig::CONFIG['CPP'] = 'g++ -E'
 
 # taglib-config does not implement libs-only-l, so we copy and paste pkg_config
 # from mkmf then remove the call to taglib-config --libs-only-l
