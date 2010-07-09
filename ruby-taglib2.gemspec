@@ -1,11 +1,11 @@
 Gem::Specification.new do |s|
   s.name = "ruby-taglib2"
-  s.version = "1.01"
+  s.version = "1.02"
  
   s.required_rubygems_version = nil if s.respond_to? :required_rubygems_version=
-  s.authors = ["Neil Stevens", "Saimon Moore"]
+  s.authors = ["Neil Stevens", "Saimon Moore", "Jason Lambert"]
   s.cert_chain = nil
-  s.date = "2009-11-19"
+  s.date = "2010-07-09"
   s.email = "neil@hakubi.us"
   s.extensions = ["ext/extconf.rb"]
   s.files = ["README", "ext/extconf.rb", "ext/ruby-taglib2.cpp", "lib/ruby_taglib2.rb"]
