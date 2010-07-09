@@ -1,3 +1,36 @@
+
+This fork contains extensions to also provide the following methods:
+
+
+TagLib2::File#albumArtist(string)
+TagLib2::File#albumArtist=(string) - Get and set the grouping for the file
+
+TagLib2::File#grouping(string)
+TagLib2::File#grouping=(string) - Get and set the grouping for the file
+
+TagLib2::File#composer(string)
+TagLib2::File#composer=(string) - Get and set the Composer of the track
+
+TagLib2::File#cdNr(num)
+TagLib2::File#cdNr=(num) - Get and set the CD Number this track belongs to
+
+TagLib2::File#totalCDs(num)
+TagLib2::File#totalCDs=(num) - Get and set the Total number of CDs in the album
+
+TagLib2::File#totalTracks(num)
+TagLib2::File#totalTracks=(num) - Get and set the Total number of tracks in the album
+
+TagLib2::File#bpm(num)
+TagLib2::File#bpm=(num) - Get and set the BPM of the track
+
+
+*** NOTE: You must also be using the patched version of TagLib 1.6.3 that supports 
+these properties, see our github repo, hopefully in future the main TagLib source 
+will be updated to support these extra properties as well ***
+
+------
+
+
 ruby-taglib2 is a compiled extension to ruby that provides access to the TagLib
 library.  ruby-taglib2 optionally uses the Mahoro library when available for
 much more accurate detection of file formats (TagLib without Mahoro just looks
