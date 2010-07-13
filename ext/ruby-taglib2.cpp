@@ -70,7 +70,8 @@ TagLib::File *MahoroFileTypeResolver::createFile(const char *fileName, bool read
 		VALUE mime = rb_funcall(mahoro, rb_intern("file"), 1,
 		                        rb_str_new(fileName, strlen(fileName)));
 
-		if(RTEST(rb_funcall(mime, rb_intern("include?"), 1, rb_str_new("MP3", 3))))
+		if(RTEST(rb_funcall(mime, rb_intern("include?"), 1, rb_str_new("MP3", 3))) ||
+		   RTEST(rb_funcall(mime, rb_intern("include?"), 1, rb_str_new("ID3", 3))) )
 		{
 			return new TagLib::MPEG::File(fileName, read, style);
 		}
