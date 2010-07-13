@@ -478,4 +478,8 @@ extern "C" void Init_taglib2(void)
 	VALUE ret = rb_protect(requireMahoro, Qnil, &failed);
 
 	rb_define_const(TagLib2Module, "MAHORO_PRESENT", failed ? Qfalse : Qtrue);
+    if (!failed)
+    {
+        TagLib::FileRef::addFileTypeResolver(new MahoroFileTypeResolver);
+    }
 }
