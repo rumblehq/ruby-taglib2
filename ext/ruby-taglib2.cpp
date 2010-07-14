@@ -136,7 +136,7 @@ TagLib::File *NaiveFileTypeResolver::createFile(const char *fileName, bool read,
     }
 
     bytes = fread(fileid, sizeof(char), 4, media);
-    fprintf(stderr, "Read %d bytes\n", (int) bytes);
+//    fprintf(stderr, "Read %d bytes\n", (int) bytes);
     if (bytes != 4)
     {
         if (ferror(media)) {
