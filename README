@@ -1,7 +1,8 @@
 
 This fork contains extensions to also provide the following methods:
 
-
+TagLib2::File#album_artist(string)
+TagLib2::File#album_artist=(string)
 TagLib2::File#albumArtist(string)
 TagLib2::File#albumArtist=(string) - Get and set the grouping for the file
 
@@ -11,12 +12,20 @@ TagLib2::File#grouping=(string) - Get and set the grouping for the file
 TagLib2::File#composer(string)
 TagLib2::File#composer=(string) - Get and set the Composer of the track
 
+TagLib2::File#cd_number(num)
+TagLib2::File#cd_number=(num)
+TagLib2::File#cd_nr(num)
+TagLib2::File#cd_nr=(num)
 TagLib2::File#cdNr(num)
 TagLib2::File#cdNr=(num) - Get and set the CD Number this track belongs to
 
+TagLib2::File#total_cds(num)
+TagLib2::File#total_cds=(num)
 TagLib2::File#totalCDs(num)
 TagLib2::File#totalCDs=(num) - Get and set the Total number of CDs in the album
 
+TagLib2::File#total_tracks(num)
+TagLib2::File#total_tracks=(num)
 TagLib2::File#totalTracks(num)
 TagLib2::File#totalTracks=(num) - Get and set the Total number of tracks in the album
 
