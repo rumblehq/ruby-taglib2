@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name = "ruby-taglib2"
-  s.version = "1.03"
+  s.version = "1.04"
 
   s.required_rubygems_version = nil if s.respond_to? :required_rubygems_version=
   s.authors = ["Neil Stevens", "Saimon Moore", "Jason Lambert"]
