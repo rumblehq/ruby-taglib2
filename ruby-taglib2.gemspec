@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.required_rubygems_version = nil if s.respond_to? :required_rubygems_version=
   s.authors = ["Neil Stevens", "Saimon Moore", "Jason Lambert"]
   s.cert_chain = []
-  s.date = "2010-07-09"
+  s.date = "2012-06-21"
   s.email = "neil@hakubi.us"
   s.extensions = ["ext/extconf.rb"]
   s.files = ["README", "ext/extconf.rb", "ext/ruby-taglib2.cpp", "lib/ruby_taglib2.rb"]
